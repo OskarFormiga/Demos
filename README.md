@@ -46,24 +46,30 @@ git clone https://github.com/OskarFormiga/Demos.git
 cd Demos
 ```
 
-### 2. Instalar dependencias
+### 2. Configurar política de ejecución (Windows PowerShell)
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+> **Nota**: Este comando es necesario en Windows para permitir la ejecución de scripts de npm. Solo necesitas ejecutarlo una vez por usuario.
+
+### 3. Instalar dependencias
 ```bash
 npm install
 ```
 
-### 3. Instalar Expo CLI globalmente (opcional pero recomendado)
+### 4. Instalar Expo CLI globalmente (opcional pero recomendado)
 ```bash
 npm install -g @expo/cli
 ```
 
-### 4. Iniciar el proyecto
+### 5. Iniciar el proyecto
 ```bash
 npm start
 # o alternativamente
 npx expo start
 ```
 
-### 5. Abrir en dispositivo/emulador
+### 6. Abrir en dispositivo/emulador
 - Escanea el código QR con **Expo Go** (Android/iOS)
 - Escanea con la **app Cámara** (iOS)
 - Presiona `w` para abrir en navegador web
